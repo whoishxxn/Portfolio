@@ -1,0 +1,99 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #1a001f; /* dark purple */
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #2a0033;
+  border-bottom: 1px solid #400060;
+}
+header h1 {
+  color: #a64dff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s, color 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color: #fff;
+  transform: translateY(-4px);
+  border: 1px solid #a64dff;
+  box-shadow: 0 0 12px #a64dff66, 0 0 20px #ff00ff44;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #d580ff;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+}
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #d580ff;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: rgba(40, 0, 50, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #400060;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  backdrop-filter: blur(8px);
+  min-height: 220px; /* bigger size */
+}
+.card h4 {
+  margin-bottom: 0.8rem;
+  color: #a64dff;
+}
+.card p {
+  color: #ddd;
+  line-height: 1.4;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border: 1px solid #a64dff;
+  box-shadow: 0 0 12px #a64dff66, 0 0 20px #ff00ff44;
+}
